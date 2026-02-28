@@ -1,0 +1,48 @@
+# 0:0 - 0:20
+# Showing the presentation about my project
+
+#0:20- 0:36
+#Introducing the computer behind the construction of task 1 - separation into auxiliary, modular functions for the task which is the infrastructure
+
+#0:36- 1:00
+#Introducing the function that counts the number of appearances of each sequence in sentences in Task 2 , counting is done using a dictionary that allows efficiency
+
+
+#1:00- 1:26
+#Introducing the 'has_overlap' function checks if there are overlaps between a main name and synonyms (alias) in Task 3 .
+
+
+#1:26- 1:44
+#An explanation of the search_k_seqs_in_sentences function that looks for sequences within sentences and returns the list of matches in
+Task 4
+
+#1:44- 2:06
+#An explanation of the Task 6 run function and the use of defaultdict which automatically creates a default value, which eliminates the need for manual checks and streamlines the counting process.
+
+#2:06-2:24
+#Explanation of the function that looks for routes between two names in task 7, emphasis on using a variable that prevents repeated returns for efficiency
+
+
+#2:24-2:43
+#Explanation of the deep search function to find a route in a desired location in Task 8
+
+
+#2:43-3:07
+#Showing output result of Task 9 which takes sentences and groups them by common words
+python main.py -t 9 -s Q9_examples/example_1/sentences_small_1.csv -r REMOVEWORDS.csv --threshold 1
+
+
+#3:07-3:15
+#Showing the tests file which was checked by the pytest-cov command
+
+#3:15-3:52
+#Showing the effect of the running time on different values ​​of lengths in task 8
+python main.py -t 8 -s Q8_examples/Q8_example_3/sentences_small_3.csv -n Q8_examples/example_3/people_small_3.csv -r REMOVEWORDS.csv --threshold 2 --fixed_length 8 --pairs Q8_examples/example_3/people_connections_3.json --windowsize 3
+
+
+#3:52-5:00
+#An explanation of the results that are obtained as a result of different threshold values ​​that are obtained, so that affects the amount of connections between people in the 9 Extension
+python task_9.py
+
+
+

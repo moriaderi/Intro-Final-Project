@@ -1,0 +1,19 @@
+# Text Analyzer / Moria Deri
+
+## Extensions:
+
+* Extension number 8 - The extension checks if there is a path of length 'k' between pairs of people based on their connections, using preprocessed data from Task 6 or raw input files, and outputs whether a valid path exists for each pair.
+
+
+* Extension number 9 - The extension groups sentences based on shared words. It builds a graph where sentences are connected if they share at least a certain threshold of words.
+
+Decisions throughout the code development:
+Throughout the project development, I maintained principles of modular code design. I will provide concrete examples of this in both the presentation and code review, explaining the reasoning behind each decision. Here are the key principles I consistently followed 
+
+I consistently emphasized class division and helper functions to ensure modularity, primarily to minimize errors that arise from disorganization and code redundancy under a single operation.
+This approach also helps avoid unnecessary repetition and makes the code more manageable and maintainable. For example, in the first class that centralizes text processing operations, each function is responsible for a specific operation (such as data loading, text cleaning, and handling words to be removed). These operations are relevant to every other task, so I ensured they were implemented only once.
+I made sure to use efficient and appropriate data structures according to needs. For example, choosing a set data structure is particularly suitable for a function responsible for removing duplicates, as it operates in constant time and is faster than searching through a list. Additionally, the inherent structure of a set prevents duplicates, making it ideal for the purpose of removing duplicates.
+Throughout the project, I ensured that implementation of a function with a specific purpose would not be repeated more than once. Even in more advanced tasks like 7-8 where functions from task 6 are needed, this principle is maintained. Whenever I need to use a function already implemented in another class, I import that class and create an object of it in the current class.
+I made sure to address various edge cases - such as empty sentence files or names without text, and other cases. This careful attention to edge cases helps ensure the robustness and reliability of the code.
+
+These design decisions have contributed to creating a maintainable, efficient, and robust codebase that effectively handles all the required tasks while minimizing potential errors and redundancy.
